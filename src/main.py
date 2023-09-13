@@ -20,4 +20,12 @@ app.add_middleware(
 @app.post('/saveOrder')
 async def save_order(answers: dict[str, list[str]]):
     append_table(answers=answers['answers'])
+    body = f"""
+    
+    Нове замовлення!
+    {answers['answers']}
+
+    https://docs.google.com/spreadsheets/d/1pcOTCho5qksYO7xrjtT2drW472HHzIMVbmbMM2gtq_A
+    """
+    send_email('vashivorotaa@gmail.com', "Хтось пройшов тест", body)
     return answers

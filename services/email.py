@@ -4,8 +4,8 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.application import MIMEApplication
 
 # Параметри для доступу до Gmail
-email = "your_email@gmail.com"
-password = "your_password"
+email = "fedir.tat@gmail.com"
+password = "yyqxuabsbymmvept"
 smtp_server = "smtp.gmail.com"
 smtp_port = 587
 
